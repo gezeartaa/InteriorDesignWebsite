@@ -1,0 +1,55 @@
+@use "colors";
+@use "fonts";
+
+* {
+  font-size: 10px;
+}
+
+.display {
+  font-family: fonts.$font-heading;
+  font-size: 85px;
+   line-height: 125%;
+  color: colors.$primary-color2;
+}
+
+h1 {
+    font-family: fonts.$font-heading;
+  font-size: 50px;
+  line-height: 125%;
+  color: colors.$primary-color2;
+}
+
+h2 {
+    font-family: fonts.$font-heading;
+  font-size:35;
+  line-height: 125%;
+  color: colors.$primary-color2;
+}
+
+h3 {
+    font-family: fonts.$font-heading;
+  font-size: 25px;
+  line-height: 125%;
+  color: colors.$primary-color2;
+}
+
+h4 {
+    font-family: fonts.$font-heading;
+  font-size: 22px;
+  line-height: 125%;
+  color: colors.$primary-color2;
+}
+
+h5 {
+    font-family: fonts.$font-heading;
+  font-size: 20px;
+  line-height: 125%;
+  color: colors.$primary-color2;
+}
+
+h6 {
+    font-family: fonts.$font-heading;
+  font-size: 18px;
+  line-height: 125%;
+  color: colors.$primary-color2;
+}
