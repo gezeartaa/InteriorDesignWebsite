@@ -1,0 +1,42 @@
+@use "fonts";
+@use "colors";
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 26px 54px;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 2%;
+  font-weight: fonts.$semibold-font;
+  color: colors.$color-white;
+
+  background-color: colors.$primary-color2;
+
+  &:hover {
+    background-color: darken(colors.$primary-color2, 5%);
+  }
+
+  .icon {
+    font-size: 14px;
+    color: colors.$primary-color1;
+  }
+}
+
+.button--large {
+
+}
+
+.button--primary {
+  background-color: colors.$primary-color1;
+
+  &:hover {
+    background-color: darken(colors.$primary-color1, 5%);
+  }
+}

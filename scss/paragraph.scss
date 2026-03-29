@@ -1,10 +1,11 @@
+@use "fonts";
+@use "colors";
+
 p {
-  font-family: fonts.$font-secondary;
+  font-family: fonts.$font-body;
   line-height: 150%;
-  color: $text-light;
+  color:  colors.$text-light;
   letter-spacing: 1%;
-  font-weight: 400;
-  text-align: left;
 }
 
 .p-large {

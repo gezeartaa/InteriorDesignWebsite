@@ -1,0 +1,10 @@
+@use "fonts";
+@use "colors";
+
+ol {
+    font-family: fonts.$font-body;
+    color: colors.$text-color;
+    line-height: 270%;
+    letter-spacing: 1%;
+
+}
