@@ -1,0 +1,25 @@
+@use "colors";
+@use "fonts";
+@use "icons";
+@use "paragraph";
+@use "images";
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 57px 227px;
+    background-color: colors.$primary-color3;
+    img {
+        justify-content: center;
+        content: images.$img-quotes-brown;
+    }
+
+    p {
+        color: colors.$primary-color1;
+        font-weight: fonts.$italic-font;
+        justify-content: center;
+        
+    }
+}
+
+
