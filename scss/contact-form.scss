@@ -1,0 +1,23 @@
+@use "colors";
+@use "fonts";
+@use "mixins";
+
+form {
+  form__input::placeholder {
+    font-family: fonts.$font-body;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 1%;
+    color: colors.$text-color;
+    margin-bottom: 13px;
+  }
+  .form__textarea {
+    border: none;
+    border-bottom: 1px solid #000000;
+  }
+  .form__btn {
+    color: colors.$primary-color2;
+    padding: 26px 54px;
+    border-radius: 18px;
+  }
+}
