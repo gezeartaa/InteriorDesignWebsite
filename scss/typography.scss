@@ -1,8 +1,8 @@
 @use "colors";
 @use "fonts";
 
-$margin-left: 360px;
-$margin-right: 360px;
+$sides-margin: 360px;
+
 
 .display {
   font-family: fonts.$font-heading;

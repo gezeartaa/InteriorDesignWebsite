@@ -1,5 +1,65 @@
-header {
-  display: flex;
+.display {
+  font-family: "DM Serif Display", serif;
+  font-size: 85px;
+  line-height: 125%;
+  color: #292F36;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  line-height: 125%;
+  color: #292F36;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 35;
+  line-height: 125%;
+  color: #292F36;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  line-height: 125%;
+  color: #292F36;
+}
+
+h4 {
+  font-family: "DM Serif Display", serif;
+  font-size: 22px;
+  line-height: 125%;
+  color: #292F36;
+}
+
+h5 {
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  line-height: 125%;
+  color: #292F36;
+}
+
+h6 {
+  font-family: "DM Serif Display", serif;
+  font-size: 18px;
+  line-height: 125%;
+  color: #292F36;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  border: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header div {
+  margin: 45px 360px;
 }
 
 /*# sourceMappingURL=index.css.map */

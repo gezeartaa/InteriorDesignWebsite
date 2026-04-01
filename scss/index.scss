@@ -1,7 +1,22 @@
 @use "colors";
 @use "fonts";
 @use "images";
+@use "typography";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  border: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
+}
 
 header {
-    display: flex;
+  div {
+    margin: 45px typography.$sides-margin;
+
+  }
 }
