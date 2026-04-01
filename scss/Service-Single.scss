@@ -1,0 +1,15 @@
+@use "typography";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  border: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
+}
+footer {
+  margin-right: typography.$margin-right;
+  margin-left: typography.$margin-left;
+}
