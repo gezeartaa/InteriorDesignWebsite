@@ -170,6 +170,7 @@ header div nav .searchIcon {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
+  margin-bottom: 200px;
 }
 .hero img {
   width: 100vw;
@@ -188,6 +189,43 @@ header div nav .searchIcon {
 }
 .hero .hero__content p {
   margin-bottom: 20px;
+}
+
+.summaries {
+  display: flex;
+  gap: 40px;
+  padding: 0 22px;
+  margin-bottom: 200px;
+}
+.summaries article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.summaries article h3 {
+  margin-bottom: 20px;
+}
+.summaries article p {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.summaries article div {
+  display: flex;
+  gap: 12px;
+}
+.summaries article div a {
+  text-decoration: none;
+  color: #292F36;
+  line-height: 125%;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+}
+.summaries article div a:hover {
+  color: #CDA274;
+}
+.summaries .arrow {
+  font-size: 18px;
+  color: #CDA274;
 }
 
 /*# sourceMappingURL=index.css.map */
