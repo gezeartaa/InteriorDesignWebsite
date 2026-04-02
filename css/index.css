@@ -61,7 +61,6 @@ button {
   padding: 26px 54px;
   border-radius: 18px;
   border: none;
-  cursor: pointer;
   font-size: 18px;
   line-height: 125%;
   letter-spacing: 2%;
@@ -93,7 +92,8 @@ button:hover {
 
 .main__wrapper {
   border: 1px solid red;
-  width: 63%;
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -170,7 +170,7 @@ header div nav .searchIcon {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .hero img {
   width: 100vw;
@@ -181,7 +181,7 @@ header div nav .searchIcon {
   position: absolute;
   width: 567px;
   top: 50%;
-  left: 360px;
+  left: 11%;
   transform: translateY(-50%);
 }
 .hero .hero__content .display {
@@ -193,19 +193,22 @@ header div nav .searchIcon {
 
 .summaries {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   padding: 0 22px;
-  margin-bottom: 200px;
 }
 .summaries article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
+  padding: 100px 10px;
+  transition: background-color 0.2s;
 }
 .summaries article h3 {
   margin-bottom: 20px;
 }
 .summaries article p {
+  font-size: 22px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -223,9 +226,53 @@ header div nav .searchIcon {
 .summaries article div a:hover {
   color: #CDA274;
 }
+.summaries article:hover {
+  background-color: #f4f0EC;
+  border-radius: 50px;
+}
 .summaries .arrow {
   font-size: 18px;
   color: #CDA274;
+}
+
+.estimate {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 200px;
+}
+.estimate__kitchen {
+  width: 54%;
+  height: 700px;
+  border-bottom-left-radius: 130px;
+  border-top-right-radius: 270px;
+}
+.estimate__text {
+  margin: 40px 0;
+}
+.estimate__text h1 {
+  margin-bottom: 33px;
+}
+.estimate__text img {
+  width: 93px;
+  height: 93px;
+}
+.estimate__info {
+  display: flex;
+  gap: 15px;
+  margin: 45px 0;
+}
+.estimate__info p {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.estimate__info p span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.estimate button {
+  padding: 26px 31px;
 }
 
 /*# sourceMappingURL=index.css.map */

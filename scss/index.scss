@@ -13,7 +13,8 @@
 
 .main__wrapper {
   border: 1px solid red;
-  width: 63%;
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -106,7 +107,7 @@ header {
 
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   img {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -117,7 +118,7 @@ header {
     position: absolute;
     width: 567px;
     top: 50%;
-    left: 360px;
+    left: 11%;
     transform: translateY(-50%);
 
     .display {
@@ -132,18 +133,22 @@ header {
 
 .summaries {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   padding: 0 22px;
-  margin-bottom: 200px;
+
   article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
+    padding: 100px 10px;
+    transition: background-color 0.2s;
 
     h3 {
       margin-bottom: 20px;
     }
     p {
+      font-size: 22px;
       margin-bottom: 50px;
       text-align: center;
     }
@@ -162,9 +167,55 @@ header {
         }
       }
     }
+    &:hover {
+      background-color: colors.$primary-color3;
+
+      border-radius: 50px;
+    }
   }
   .arrow {
     font-size: 18px;
     color: colors.$primary-color1;
+  }
+}
+
+.estimate {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 200px;
+
+  &__kitchen {
+    width: 54%;
+    height: 700px;
+    border-bottom-left-radius: 130px;
+    border-top-right-radius: 270px;
+  }
+  &__text {
+    margin: 40px 0;
+    h1 {
+      margin-bottom: 33px;
+    }
+    img {
+      width: 93px;
+      height: 93px;
+    }
+  }
+  &__info {
+    display: flex;
+    gap: 15px;
+    margin: 45px 0;
+    p {
+      font-size: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      span {
+        font-size: 24px;
+        font-weight: fonts.$bold-font;
+      }
+    }
+  }
+  button {
+    padding: 26px 31px;
   }
 }
