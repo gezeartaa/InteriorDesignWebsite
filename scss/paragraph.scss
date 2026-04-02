@@ -7,3 +7,10 @@ p {
   color: colors.$text-color;
   letter-spacing: 1%;
 }
+.email {
+  font-family: fonts.$font-body;
+  line-height: 300%;
+  color: colors.$text-color;
+  letter-spacing: 1%;
+  font-size: fonts.$large-paragraph;
+}
