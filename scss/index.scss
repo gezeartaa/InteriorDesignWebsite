@@ -2,6 +2,8 @@
 @use "fonts";
 @use "images";
 @use "typography";
+@use "paragraph";
+@use "buttons";
 
 // header start
 * {
@@ -11,13 +13,13 @@
 
 .main__wrapper {
   border: 1px solid red;
-  width: 81%;
+  width: 63%;
   margin: 0 auto;
   box-sizing: border-box;
 }
 header {
   div {
-    margin: 45px 0;
+    margin: 28px 0;
     display: flex;
     align-items: center;
 
@@ -25,7 +27,7 @@ header {
       display: flex;
       align-items: center;
       margin-left: auto;
-      
+
       .nav__links {
         display: flex;
         gap: 50px;
@@ -97,3 +99,32 @@ header {
 }
 
 //header end
+
+.hero {
+  position: relative;
+  width: 100vw;
+
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+  img {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    border-bottom-left-radius: 200px;
+  }
+
+  .hero__content {
+    position: absolute;
+    width: 567px;
+    top: 50%;
+    left: 360px;
+    transform: translateY(-50%);
+
+    .display {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

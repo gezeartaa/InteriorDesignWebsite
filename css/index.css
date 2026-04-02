@@ -47,6 +47,45 @@ h6 {
   color: #292F36;
 }
 
+p {
+  font-family: "Jost", sans-serif;
+  line-height: 150%;
+  color: #4D5053;
+  letter-spacing: 1%;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 26px 54px;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 2%;
+  font-weight: 600;
+  color: #FFFFFF;
+  align-items: center;
+  gap: 10px;
+  background-color: #292F36;
+}
+button .arrow {
+  font-size: 18px;
+  color: #CDA274;
+}
+button:hover {
+  background-color: rgb(29.9947368421, 34.3842105263, 39.5052631579);
+}
+
+.button--primary {
+  background-color: #CDA274;
+}
+.button--primary:hover {
+  background-color: rgb(198.253968254, 149.4523809524, 97.246031746);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -54,13 +93,13 @@ h6 {
 
 .main__wrapper {
   border: 1px solid red;
-  width: 81%;
+  width: 63%;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 header div {
-  margin: 45px 0;
+  margin: 28px 0;
   display: flex;
   align-items: center;
 }
@@ -124,6 +163,31 @@ header div nav .nav__links .nav__item.dropdown:hover .dropdown__menu {
 }
 header div nav .searchIcon {
   margin-left: 30px;
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+}
+.hero img {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border-bottom-left-radius: 200px;
+}
+.hero .hero__content {
+  position: absolute;
+  width: 567px;
+  top: 50%;
+  left: 360px;
+  transform: translateY(-50%);
+}
+.hero .hero__content .display {
+  margin-bottom: 10px;
+}
+.hero .hero__content p {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
