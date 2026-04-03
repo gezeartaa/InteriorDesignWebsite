@@ -98,6 +98,10 @@ button:hover {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .main__wrapper {
   border: 1px solid red;
   max-width: 1000px;
@@ -389,9 +393,41 @@ header div nav .searchIcon {
   font-weight: 700;
   font-family: "DM Serif Display", serif;
 }
-.ourProjects__container .project__name img {
+.ourProjects__container .project__name p span:hover {
+  color: #CDA274;
+}
+.ourProjects__container .project__name a img {
   width: 70px;
   height: 70px;
+}
+
+.statistics {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #f4f0EC;
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  padding: 100px 0;
+  justify-content: center;
+}
+.statistics h1 {
+  color: #CDA274;
+  font-size: 80px;
+  font-weight: 400;
+}
+.statistics p {
+  font-size: 20px;
+}
+.statistics .statistic {
+  text-align: center;
+  padding: 0 20px;
+  padding-right: 45px;
+  border-right: 1px solid #cda274;
+}
+.statistics .statistic:last-child {
+  border-right: none;
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

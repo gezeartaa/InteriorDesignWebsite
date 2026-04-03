@@ -6,8 +6,6 @@
 @use "buttons";
 @use "header";
 
-// header start
-
 .hero {
   position: relative;
   width: 100vw;
@@ -216,7 +214,7 @@
       }
     }
     .project__name {
-        margin-top: 24px;
+      margin-top: 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -225,19 +223,51 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
 
         span {
           font-size: 25px;
           font-weight: fonts.$bold-font;
           font-family: fonts.$font-heading;
+          &:hover {
+            color: colors.$primary-color1;
+          }
         }
-        
       }
-      img {
+      a {
+        img {
           width: 70px;
           height: 70px;
         }
+      }
+    }
+  }
+}
+
+.statistics {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: colors.$primary-color3;
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  padding: 100px 0;
+  justify-content: center;
+  h1 {
+    color: colors.$primary-color1;
+    font-size: 80px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 20px;
+  }
+  .statistic {
+    text-align: center;
+    padding: 0 20px;
+    padding-right: 45px;
+    border-right: 1px solid #cda274;
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
     }
   }
 }
