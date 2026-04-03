@@ -14,7 +14,7 @@ h1 {
 
 h2 {
   font-family: "DM Serif Display", serif;
-  font-size: 35;
+  font-size: 35px;
   line-height: 125%;
   color: #292F36;
 }
@@ -52,6 +52,14 @@ p {
   line-height: 150%;
   color: #4D5053;
   letter-spacing: 1%;
+}
+
+.email {
+  font-family: "Jost", sans-serif;
+  line-height: 300%;
+  color: #4D5053;
+  letter-spacing: 1%;
+  font-size: 22px;
 }
 
 button {
@@ -273,6 +281,54 @@ header div nav .searchIcon {
 }
 .estimate button {
   padding: 26px 31px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding: 88px 24px;
+  background-color: #f4f0EC;
+  border-radius: 70px;
+  align-items: center;
+}
+.aboutUs h1 {
+  width: 547px;
+  text-align: center;
+}
+.aboutUs div {
+  display: flex;
+  gap: 15px;
+}
+.aboutUs div article {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 53px 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+.aboutUs div article div {
+  gap: 23px;
+  margin-bottom: 33px;
+}
+.aboutUs div article div p {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutUs div article div p span {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "DM Serif Display", serif;
+}
+.aboutUs div article div .profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=index.css.map */
