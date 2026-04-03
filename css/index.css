@@ -324,6 +324,9 @@ header div nav .searchIcon {
   font-weight: 700;
   font-family: "DM Serif Display", serif;
 }
+.aboutUs div article div .description {
+  font-size: 22px;
+}
 .aboutUs div article div .profile {
   width: 60px;
   height: 60px;
@@ -336,6 +339,59 @@ header div nav .searchIcon {
 }
 .clients img {
   width: 100%;
+}
+
+.ourProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.ourProjects .description {
+  margin-top: 8px;
+  margin-bottom: 93px;
+}
+.ourProjects__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 100px;
+  column-gap: 55px;
+}
+.ourProjects__container .example {
+  width: 450px;
+}
+.ourProjects__container .example--first {
+  border-top-right-radius: 70px;
+}
+.ourProjects__container .example--second {
+  border-top-left-radius: 70px;
+}
+.ourProjects__container .example--third {
+  border-bottom-right-radius: 70px;
+}
+.ourProjects__container .example--fourth {
+  border-bottom-left-radius: 70px;
+}
+.ourProjects__container .project__name {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ourProjects__container .project__name p {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ourProjects__container .project__name p span {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "DM Serif Display", serif;
+}
+.ourProjects__container .project__name img {
+  width: 70px;
+  height: 70px;
 }
 
 /*# sourceMappingURL=index.css.map */
