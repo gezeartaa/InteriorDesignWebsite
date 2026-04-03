@@ -331,4 +331,11 @@ header div nav .searchIcon {
   object-fit: cover;
 }
 
+.clients {
+  margin: 150px 55px;
+}
+.clients img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */
