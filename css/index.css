@@ -14,7 +14,7 @@ h1 {
 
 h2 {
   font-family: "DM Serif Display", serif;
-  font-size: 35;
+  font-size: 35px;
   line-height: 125%;
   color: #292F36;
 }
@@ -52,6 +52,14 @@ p {
   line-height: 150%;
   color: #4D5053;
   letter-spacing: 1%;
+}
+
+.email {
+  font-family: "Jost", sans-serif;
+  line-height: 300%;
+  color: #4D5053;
+  letter-spacing: 1%;
+  font-size: 22px;
 }
 
 button {
