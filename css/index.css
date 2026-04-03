@@ -290,7 +290,7 @@ header div nav .searchIcon {
 }
 .aboutUs div {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 .aboutUs div article {
   background-color: #fff;
