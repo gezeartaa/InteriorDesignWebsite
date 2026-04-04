@@ -1,0 +1,6 @@
+@use "header";
+@use "mainImage";
+
+.hero {
+  background: url("../images/about-hero.png") center/cover no-repeat;
+}
