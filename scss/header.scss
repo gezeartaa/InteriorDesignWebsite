@@ -9,6 +9,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow-x: hidden;
+}
+
 
 .main__wrapper {
   border: 1px solid red;
