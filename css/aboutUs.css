@@ -1,3 +1,473 @@
+.display {
+  font-family: "DM Serif Display", serif;
+  font-size: 85px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
 
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 35px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "DM Serif Display", serif;
+  font-size: 22px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: "DM Serif Display", serif;
+  font-size: 18px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Jost", sans-serif;
+  line-height: 150%;
+  color: #4d5053;
+  letter-spacing: 1%;
+}
+
+.email {
+  font-family: "Jost", sans-serif;
+  line-height: 300%;
+  color: #4d5053;
+  letter-spacing: 1%;
+  font-size: 22px;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 26px 54px;
+  border-radius: 18px;
+  border: none;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 2%;
+  font-weight: 600;
+  color: #ffffff;
+  align-items: center;
+  gap: 10px;
+  background-color: #292f36;
+}
+button .arrow {
+  font-size: 18px;
+  color: #cda274;
+}
+button:hover {
+  background-color: rgb(29.9947368421, 34.3842105263, 39.5052631579);
+}
+
+.button--primary {
+  background-color: #cda274;
+}
+.button--primary .arrow {
+  color: #292f36;
+}
+.button--primary:hover {
+  background-color: rgb(198.253968254, 149.4523809524, 97.246031746);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main__wrapper {
+  border: 1px solid red;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header div {
+  margin: 28px 0;
+  display: flex;
+  align-items: center;
+}
+header div nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+header div nav .nav__links {
+  display: flex;
+  gap: 50px;
+  position: relative;
+}
+header div nav .nav__links a {
+  text-decoration: none;
+  color: #292f36;
+  line-height: 125%;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+}
+header div nav .nav__links a:hover {
+  color: #cda274;
+}
+header div nav .nav__links .nav__item {
+  position: relative;
+}
+header div nav .nav__links .nav__item a {
+  text-decoration: none;
+  color: #292f36;
+  line-height: 125%;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+}
+header div nav .nav__links .nav__item:hover {
+  color: #cda274;
+}
+header div nav .nav__links .nav__item.dropdown .dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  z-index: 100;
+}
+header div nav .nav__links .nav__item.dropdown .dropdown__menu li a {
+  padding: 10px;
+  display: block;
+  color: #292f36;
+  text-decoration: none;
+}
+header div nav .nav__links .nav__item.dropdown .dropdown__menu li a:hover {
+  color: #cda274;
+}
+header div nav .nav__links .nav__item.dropdown:hover .dropdown__menu {
+  display: block;
+}
+header div nav .searchIcon {
+  margin-left: 30px;
+}
+
+.hero {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 356px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 200px;
+}
+.hero__box {
+  background: #ffffff;
+  padding: 41px 96px;
+  text-align: center;
+  border-radius: 40px 40px 0 0;
+}
+
+.contact__form {
+  width: 600px;
+}
+
+.form__row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #666;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+}
+
+textarea {
+  margin-top: 20px;
+  height: 120px;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #cda274;
+}
+
+ol {
+  font-family: "Jost", sans-serif;
+  color: #4d5053;
+  line-height: 270%;
+  letter-spacing: 1%;
+}
+ol ::marker {
+  color: #cda274;
+}
+
+li {
+  font-family: "Jost", sans-serif;
+  color: #4d5053;
+  line-height: 300%;
+  letter-spacing: 1%;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+footer {
+  margin-bottom: 30px;
+  margin-top: 200px;
+}
+footer .footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-bottom: 134px;
+  gap: 40px;
+}
+footer p {
+  font-size: 22px;
+}
+footer a {
+  text-decoration: none;
+}
+footer li {
+  font-size: 22px;
+}
+footer li:hover {
+  color: #cda274;
+}
+footer .footer__col figure {
+  margin-bottom: 18px;
+}
+footer .footer__desc {
+  margin-bottom: 31px;
+  font-size: 22px;
+}
+footer .footer__socials {
+  display: flex;
+  gap: 54px;
+  margin-bottom: 182px;
+}
+footer .footer__col--pages li {
+  list-style: none;
+}
+footer .footer__col--pages h3 {
+  margin-bottom: 9px;
+}
+footer .footer__col--services li {
+  list-style: none;
+}
+footer .footer__col--services h3 {
+  margin-bottom: 9px;
+}
+footer .footer__col--contact h3 {
+  margin-bottom: 26px;
+}
+footer .footer__col--contact .address {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+footer .footer__col--contact .email {
+  margin-bottom: 10px;
+}
+footer .footer__col--contact p:hover {
+  color: #cda274;
+}
+footer .copyright {
+  text-align: center;
+  font-size: 22px;
+}
+
+.hero {
+  background: url("../images/about-hero.png") center/cover no-repeat;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0;
+  overflow: visible;
+}
+
+.quote__card {
+  position: relative;
+  padding: 60px 0;
+  text-align: center;
+}
+.quote__card h2 {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.quote__icon {
+  font-size: 85px;
+  font-family: "DM Serif Display", serif;
+  color: #292f36;
+}
+
+.author {
+  font-size: 18px;
+}
+
+.quote__card::before,
+.quote__card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 210px;
+  height: 450px;
+  border: 15px solid #f4f0ec;
+}
+
+.quote__card::before {
+  left: -90px;
+  border-right: none;
+  border-radius: 70px 0 0 70px;
+}
+
+.quote__card::after {
+  right: -90px;
+  border-left: none;
+  border-radius: 0 70px 70px 0;
+}
+
+.job {
+  margin: 170px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  align-items: center;
+}
+.job__concept {
+  display: flex;
+  gap: 40px;
+}
+.job__concept img {
+  width: 50%;
+  border-radius: 60px;
+}
+.job__concept p {
+  margin-top: 23px;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+.job__concept--portfolio {
+  flex-direction: row-reverse;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h1 {
+  text-align: center;
+  margin-bottom: 75px;
+  width: 70%;
+}
+.contact button {
+  margin-top: 75px;
+}
+
+.employes {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #f4f0ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 0;
+  margin-bottom: 200px;
+}
+.employes h1 {
+  margin-bottom: 40px;
+}
+.employes__info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.employe {
+  width: 230px;
+  height: 330px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.employe__profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.employe--details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.employe--details p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+}
+.employe--details p .name {
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+}
+.employe--details div {
+  display: flex;
+  gap: 20px;
+}
 
 /*# sourceMappingURL=aboutUs.css.map */
