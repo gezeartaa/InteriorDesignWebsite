@@ -256,7 +256,6 @@ footer .copyright {
 .hero {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  background: url("../images/Service-Single-img.svg") center/cover no-repeat;
   height: 356px;
   display: flex;
   align-items: end;
