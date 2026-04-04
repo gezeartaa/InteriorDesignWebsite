@@ -1,23 +1,35 @@
 @use "colors";
 @use "fonts";
-@use "mixins";
 
-form {
-  form__input::placeholder {
-    font-family: fonts.$font-body;
-    font-size: 22px;
-    line-height: 150%;
-    letter-spacing: 1%;
-    color: colors.$text-color;
-    margin-bottom: 13px;
-  }
-  .form__textarea {
-    border: none;
-    border-bottom: 1px solid #000000;
-  }
-  .form__btn {
-    color: colors.$primary-color2;
-    padding: 26px 54px;
-    border-radius: 18px;
-  }
+.contact__form {
+  width: 600px;
+}
+
+.form__row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #666;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+}
+
+textarea {
+  margin-top: 20px;
+  height: 120px;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #cda274;
 }
