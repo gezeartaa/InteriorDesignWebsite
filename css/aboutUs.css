@@ -208,4 +208,56 @@ header div nav .searchIcon {
   background: url("../images/about-hero.png") center/cover no-repeat;
 }
 
+.quote {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0;
+  overflow: visible;
+}
+
+.quote__card {
+  position: relative;
+  width: 500px;
+  padding: 60px 0;
+  text-align: center;
+}
+.quote__card h2 {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.quote__icon {
+  font-size: 85px;
+  font-family: "DM Serif Display", serif;
+  color: #292f36;
+}
+
+.author {
+  font-size: 18px;
+}
+
+/* FORMAT ANASH */
+.quote__card::before,
+.quote__card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 450px;
+  border: 15px solid #f4f0ec;
+}
+
+.quote__card::before {
+  left: -160px;
+  border-right: none;
+  border-radius: 70px 0 0 70px;
+}
+
+.quote__card::after {
+  right: -160px;
+  border-left: none;
+  border-radius: 0 70px 70px 0;
+}
+
 /*# sourceMappingURL=aboutUs.css.map */
