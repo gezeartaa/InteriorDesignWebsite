@@ -1,0 +1,49 @@
+@use "fonts";
+
+footer {
+  margin-bottom: 30px;
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 100px auto;
+
+    gap: 40px;
+    //padding: 0px typography.$sides-margin 134px typography.$sides-margin;
+  }
+  .footer__col figure {
+    margin-bottom: 18px;
+  }
+  .footer__desc {
+    margin-bottom: 31px;
+    font-size: fonts.$large-paragraph;
+  }
+  .footer__socials {
+    display: flex;
+    gap: 54px;
+    margin-bottom: 182px;
+  }
+  .footer__col--pages h3 {
+    margin-bottom: 9px;
+  }
+
+  .footer__col--services h3 {
+    margin-bottom: 9px;
+  }
+
+  .footer__col--contact {
+    h3 {
+      margin-bottom: 26px;
+      p {
+        margin-bottom: 48px;
+        font-size: fonts.$large-paragraph;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    //padding: 40px 584px 25px 584px;
+    font-size: fonts.$large-paragraph;
+  }
+}

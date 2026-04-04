@@ -6,13 +6,16 @@ ol {
   color: colors.$text-color;
   line-height: 270%;
   letter-spacing: 1%;
+  ::marker {
+    color: colors.$primary-color1;
+  }
 }
+
 li {
   font-family: fonts.$font-body;
   color: colors.$text-color;
   line-height: 300%;
   letter-spacing: 1%;
-  list-style: none;
   font-size: fonts.$large-paragraph;
   white-space: nowrap;
 }

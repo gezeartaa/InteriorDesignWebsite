@@ -3,7 +3,8 @@
 @use "fonts";
 @use "lists";
 @use "colors";
-@use "images";
+@use "buttons";
+@use "footer";
 
 // header start
 * {
@@ -103,7 +104,7 @@ header {
 //header end
 
 .hero {
-  background: url("../images/Service-Single-img.svg") center/cover no-repeat;
+  background: url("../images/Service-Single-img.svg");
   height: 356px;
   display: flex;
   align-items: end;
@@ -120,6 +121,7 @@ header {
 }
 
 .content {
+  margin-bottom: 150px;
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -133,53 +135,105 @@ header {
     margin-bottom: 28px;
   }
 }
+.brands {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 55px 150px 55px;
+}
+.video {
+  height: 374px;
+  border-radius: 50px;
+  background: url("../images/SS-Video.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
 
-// Footer start
-footer {
-  background-color: aqua;
+  &__play {
+    background: colors.$color-white;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
 
-  .footer__container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
 
-    gap: 40px;
-    //padding: 0px typography.$sides-margin 134px typography.$sides-margin;
-  }
-  .footer__col figure {
-    margin-bottom: 18px;
-  }
-  .footer__desc {
-    margin-bottom: 31px;
-    font-size: fonts.$large-paragraph;
-  }
-  .footer__socials {
-    display: flex;
-    gap: 54px;
-    margin-bottom: 182px;
-  }
-  .footer__col--pages h3 {
-    margin-bottom: 9px;
-  }
+    cursor: pointer;
 
-  .footer__col--services h3 {
-    margin-bottom: 9px;
-  }
-
-  .footer__col--contact {
-    h3 {
-      margin-bottom: 26px;
-      p {
-        margin-bottom: 48px;
-        font-size: fonts.$large-paragraph;
-      }
+    &:hover {
+      background: colors.$primary-color2;
     }
   }
-  .copyright {
-    text-align: center;
-    //padding: 40px 584px 25px 584px;
-    font-size: fonts.$large-paragraph;
+  &__play img {
+    width: 21px;
+    height: 32px;
+    display: block;
+  }
+}
+
+.services {
+  display: flex;
+  //gap: 166px; dilke hapesire e madhe
+  gap: 146px;
+  margin: 0px 0px 150px 24px;
+  //margin: 0px 100px 150px 84px; edhe me kta dilke jashte vijave
+
+  &__item {
+    h1 {
+      letter-spacing: 2%;
+      margin-bottom: 23px;
+    }
+    li {
+      font-size: 22px;
+      line-height: 270%;
+    }
+  }
+}
+.aboutSection {
+  display: flex;
+  //gap: 82px; ne figma
+  gap: 10px;
+  margin-bottom: 200px;
+  &__content {
+    h1 {
+      margin-bottom: 11px;
+    }
+    p {
+      font-size: 22px;
+      margin-bottom: 32px;
+    }
+    button {
+      padding: 26px 54px;
+    }
+  }
+}
+
+.statistics {
+  margin-bottom: 200px;
+  background-color: colors.$primary-color3;
+  &__container {
+    //padding: 151px 419px 151px 419px;
+    padding: 151px 0px 151px 0px;
+    display: flex;
+    align-items: center;
+    //gap: 76px; ne figma
+    gap: 46px;
+
+    .display {
+      color: colors.$primary-color1;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    p {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+  &__divider {
+    width: 1px;
+    height: 130px;
+    background: colors.$primary-color1;
+    align-self: center;
   }
 }
