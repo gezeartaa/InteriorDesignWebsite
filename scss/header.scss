@@ -1,6 +1,6 @@
 @use "colors";
 @use "fonts";
-@use "images";
+
 @use "typography";
 @use "paragraph";
 @use "buttons";
@@ -12,7 +12,6 @@
 body {
   overflow-x: hidden;
 }
-
 
 .main__wrapper {
   border: 1px solid red;
