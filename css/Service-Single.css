@@ -345,8 +345,12 @@ footer .copyright {
 
 .services {
   display: flex;
-  gap: 146px;
+  gap: 92px;
   margin: 0px 0px 150px 24px;
+}
+.services .divider {
+  border: 1px solid #cecece;
+  width: 249px;
 }
 .services__item h1 {
   letter-spacing: 2%;

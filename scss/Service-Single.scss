@@ -67,9 +67,14 @@
 .services {
   display: flex;
   //gap: 166px; dilke hapesire e madhe
-  gap: 146px;
+  gap: 92px;
   margin: 0px 0px 150px 24px;
   //margin: 0px 100px 150px 84px; edhe me kta dilke jashte vijave
+
+  .divider {
+    border: 1px solid colors.$divider-color;
+    width: 249px;
+  }
 
   &__item {
     h1 {
