@@ -16,13 +16,12 @@
 
 .quote__card {
   position: relative;
-  width: 500px;
   padding: 60px 0;
   text-align: center;
-   h2 {
-  font-style: italic;
-  margin-bottom: 30px;
-}
+  h2 {
+    font-style: italic;
+    margin-bottom: 30px;
+  }
 }
 
 .quote__icon {
@@ -31,12 +30,9 @@
   color: colors.$primary-color2;
 }
 
-
 .author {
   font-size: 18px;
 }
-
-/* FORMAT ANASH */
 
 .quote__card::before,
 .quote__card::after {
@@ -44,19 +40,46 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 200px;
+  width: 210px;
   height: 450px;
   border: 15px solid #{colors.$primary-color3};
 }
 
 .quote__card::before {
-  left: -160px;
+  left: -90px;
   border-right: none;
   border-radius: 70px 0 0 70px;
 }
 
 .quote__card::after {
-  right: -160px;
+  right: -90px;
   border-left: none;
   border-radius: 0 70px 70px 0;
+}
+
+.job {
+  margin: 170px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  align-items: center;
+
+  &__concept {
+    display: flex;
+    gap: 40px;
+
+    img {
+      width: 50%;
+      border-radius: 60px;
+    }
+
+    p {
+      margin-top: 23px;
+      margin-bottom: 40px;
+      font-size: fonts.$large-paragraph;
+    }
+    &--portfolio {
+        flex-direction: row-reverse;
+    }
+  }
 }

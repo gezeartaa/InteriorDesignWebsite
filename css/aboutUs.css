@@ -217,7 +217,6 @@ header div nav .searchIcon {
 
 .quote__card {
   position: relative;
-  width: 500px;
   padding: 60px 0;
   text-align: center;
 }
@@ -236,28 +235,51 @@ header div nav .searchIcon {
   font-size: 18px;
 }
 
-/* FORMAT ANASH */
 .quote__card::before,
 .quote__card::after {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 200px;
+  width: 210px;
   height: 450px;
   border: 15px solid #f4f0ec;
 }
 
 .quote__card::before {
-  left: -160px;
+  left: -90px;
   border-right: none;
   border-radius: 70px 0 0 70px;
 }
 
 .quote__card::after {
-  right: -160px;
+  right: -90px;
   border-left: none;
   border-radius: 0 70px 70px 0;
+}
+
+.job {
+  margin: 170px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  align-items: center;
+}
+.job__concept {
+  display: flex;
+  gap: 40px;
+}
+.job__concept img {
+  width: 50%;
+  border-radius: 60px;
+}
+.job__concept p {
+  margin-top: 23px;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+.job__concept--portfolio {
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=aboutUs.css.map */
