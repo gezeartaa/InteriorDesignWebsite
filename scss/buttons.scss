@@ -34,6 +34,9 @@ button {
 
 .button--primary {
   background-color: colors.$primary-color1;
+  .arrow {
+    color: colors.$primary-color2;
+  }
 
   &:hover {
     background-color: darken(colors.$primary-color1, 5%);

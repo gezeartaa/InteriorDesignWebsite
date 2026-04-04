@@ -3,6 +3,7 @@
   font-size: 85px;
   line-height: 125%;
   color: #292F36;
+  font-weight: 400;
 }
 
 h1 {
@@ -10,6 +11,7 @@ h1 {
   font-size: 50px;
   line-height: 125%;
   color: #292F36;
+  font-weight: 400;
 }
 
 h2 {
@@ -17,6 +19,7 @@ h2 {
   font-size: 35px;
   line-height: 125%;
   color: #292F36;
+  font-weight: 400;
 }
 
 h3 {
@@ -24,6 +27,7 @@ h3 {
   font-size: 25px;
   line-height: 125%;
   color: #292F36;
+  font-weight: 400;
 }
 
 h4 {
@@ -31,6 +35,7 @@ h4 {
   font-size: 22px;
   line-height: 125%;
   color: #292F36;
+  font-weight: 400;
 }
 
 h5 {
@@ -38,6 +43,7 @@ h5 {
   font-size: 20px;
   line-height: 125%;
   color: #292F36;
+  font-weight: 400;
 }
 
 h6 {
@@ -45,6 +51,7 @@ h6 {
   font-size: 18px;
   line-height: 125%;
   color: #292F36;
+  font-weight: 400;
 }
 
 p {
@@ -88,6 +95,9 @@ button:hover {
 
 .button--primary {
   background-color: #CDA274;
+}
+.button--primary .arrow {
+  color: #292F36;
 }
 .button--primary:hover {
   background-color: rgb(198.253968254, 149.4523809524, 97.246031746);
@@ -305,7 +315,7 @@ header div nav .searchIcon {
   gap: 15px;
 }
 .aboutUs div article {
-  background-color: #fff;
+  background-color: #FFFFFF;
   border-radius: 25px;
   padding: 53px 37px;
   display: flex;
@@ -418,7 +428,6 @@ header div nav .searchIcon {
 .statistics h1 {
   color: #CDA274;
   font-size: 80px;
-  font-weight: 400;
 }
 .statistics p {
   font-size: 20px;
@@ -456,7 +465,7 @@ header div nav .searchIcon {
 }
 
 .card {
-  background: #fff;
+  background: #FFFFFF;
   border-radius: 45px;
   padding: 20px;
   text-align: left;
@@ -467,13 +476,12 @@ header div nav .searchIcon {
   background-color: #f4f0EC;
 }
 .card:nth-child(2) .arrow {
-  background: #fff;
+  background: #FFFFFF;
 }
 .card:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .card h3 {
-  font-weight: 400;
   margin-bottom: 30px;
   margin-top: 20px;
 }
@@ -493,7 +501,7 @@ header div nav .searchIcon {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  background: white;
+  background: #FFFFFF;
   padding: 5px 12px;
   border-radius: 10px;
   border-bottom-left-radius: 0;
@@ -513,6 +521,24 @@ header div nav .searchIcon {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contact {
+  border-radius: 35px;
+  background-color: #292F36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 200px;
+}
+.contact h1 {
+  color: #FFFFFF;
+  margin-bottom: 11px;
+}
+.contact p {
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
 }
 
 /*# sourceMappingURL=index.css.map */
