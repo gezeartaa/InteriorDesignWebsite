@@ -1,0 +1,8 @@
+@use "header";
+@use "footer";
+@use "mainImage";
+
+.hero {
+  background: url("../images/Pricing main img.svg") center/cover no-repeat;
+  margin-bottom: 0px;
+}
