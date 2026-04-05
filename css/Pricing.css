@@ -77,6 +77,11 @@ button {
   border-radius: 18px;
   border: none;
   font-size: 18px;
+}
+button:hover {
+  background-color: rgb(29.9947368421, 34.3842105263, 39.5052631579);
+}
+button {
   line-height: 125%;
   letter-spacing: 2%;
   font-weight: 600;
@@ -88,9 +93,6 @@ button {
 button .arrow {
   font-size: 18px;
   color: #cda274;
-}
-button:hover {
-  background-color: rgb(29.9947368421, 34.3842105263, 39.5052631579);
 }
 
 .button--primary {
@@ -291,7 +293,97 @@ footer .copyright {
 
 .hero {
   background: url("../images/Pricing main img.svg") center/cover no-repeat;
-  margin-bottom: 0px;
+}
+
+.pricing__container {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+.pricing__card {
+  background: #f4f0ec;
+  border-radius: 33px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
+  width: 100%;
+  max-width: 368px;
+  position: relative;
+}
+.pricing__card--featured h3 {
+  line-height: 150%;
+  letter-spacing: 1%;
+}
+.pricing__card--featured .display {
+  color: #cda274;
+}
+.pricing__card--featured .features2 {
+  margin-top: -1px;
+}
+.pricing__card--features {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+.pricing .price2 {
+  border-bottom: 1px solid #292f36;
+}
+.pricing__badge {
+  position: relative;
+  z-index: 1;
+  top: -15px;
+  background: #292f36;
+  color: #ffffff;
+  padding: 10px 38px;
+  border-radius: 18px;
+  width: 238px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 2%;
+  font-weight: 600;
+}
+.pricing__price {
+  padding-bottom: 37px;
+  border-bottom: 1px solid #cda274;
+}
+.pricing__price .pricing__currency {
+  line-height: 150%;
+  letter-spacing: 1%;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  color: #292f36;
+  font-weight: 400;
+  padding-top: 75px;
+}
+.pricing__price h3 {
+  line-height: 150%;
+  letter-spacing: 1%;
+}
+.pricing__features {
+  list-style: none;
+  padding: 0;
+  margin-top: 28px;
+}
+.pricing__features li {
+  font-size: 20px;
+  line-height: 250%;
+}
+.pricing__btn {
+  background: #cda274;
+  border: none;
+  padding: 26px 48px;
+  margin-top: 28px;
+  border-radius: 18px;
+  height: 75px;
+  cursor: pointer;
+}
+.pricing__btn--dark {
+  padding: 26px 48px;
+  background: #292f36;
+}
+.pricing__btn:hover {
+  background-color: white;
+  color: #292f36;
 }
 
 /*# sourceMappingURL=Pricing.css.map */
