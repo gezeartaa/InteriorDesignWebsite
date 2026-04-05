@@ -272,4 +272,140 @@ footer .copyright {
   font-size: 22px;
 }
 
-/*# sourceMappingURL=footer.css.map */
+.hero {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 356px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 200px;
+}
+.hero__box {
+  background: #ffffff;
+  padding: 41px 96px;
+  text-align: center;
+  border-radius: 40px 40px 0 0;
+}
+
+.hero {
+  background: url("../images/services-hero.jpg") center/cover no-repeat;
+}
+
+.summaries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.summaries article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 10px;
+  transition: background-color 0.2s;
+}
+.summaries article h3 {
+  margin-bottom: 20px;
+}
+.summaries article p {
+  font-size: 22px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.summaries article div {
+  display: flex;
+  gap: 12px;
+}
+.summaries article div a {
+  text-decoration: none;
+  color: #292f36;
+  line-height: 125%;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+}
+.summaries article div a:hover {
+  color: #cda274;
+}
+.summaries article:hover {
+  background-color: #f4f0ec;
+  border-radius: 50px;
+}
+.summaries .arrow {
+  font-size: 18px;
+  color: #cda274;
+}
+
+.our__concept {
+  background-color: #f4f0ec;
+  border-radius: 50px;
+  padding: 100px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+.our__concept #description {
+  font-size: 22px;
+  margin-bottom: 100px;
+}
+
+.concept {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+.concept--reversed {
+  flex-direction: row-reverse;
+}
+.concept__img {
+  width: 400px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 320px;
+}
+.concept__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.concept__details__img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.concept__details__img span {
+  font-size: 100px;
+  font-family: "DM Serif Display", serif;
+  color: #ffffff;
+}
+.concept__details__img img {
+  height: 80px;
+}
+.concept h2 {
+  margin-bottom: 10px;
+}
+
+.concept:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.contact {
+  border-radius: 35px;
+  background-color: #292f36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 200px;
+  margin-top: 200px;
+}
+.contact h1 {
+  color: #ffffff;
+  margin-bottom: 11px;
+}
+.contact p {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+/*# sourceMappingURL=services.css.map */
