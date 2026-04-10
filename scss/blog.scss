@@ -1,0 +1,7 @@
+@use "header";
+@use "footer";
+@use "mainImage";
+
+.hero {
+  background: url("../images/blog-hero.svg") center/cover no-repeat;
+}
