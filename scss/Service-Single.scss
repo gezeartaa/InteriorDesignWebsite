@@ -6,10 +6,31 @@
 @use "buttons";
 @use "footer";
 @use "header";
+<<<<<<< Updated upstream
 @use "mainImage";
 
 .hero {
   background: url("../images/Service-Single-img.svg") center/cover no-repeat;
+=======
+
+.hero {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: url("../images/Service-Single-img.svg") center/cover no-repeat;
+  height: 356px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: fonts.$large-paragraph;
+  margin-bottom: 200px;
+
+  &__box {
+    background: colors.$color-white;
+    padding: 41px 96px;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+  }
+>>>>>>> Stashed changes
 }
 
 .content {
@@ -113,8 +134,13 @@
   display: flex;
   gap: 45px;
   align-items: center;
+<<<<<<< Updated upstream
   justify-content: center;
   height: 457px;
+=======
+  padding: 100px 0;
+  justify-content: center;
+>>>>>>> Stashed changes
   h1 {
     color: colors.$primary-color1;
     font-size: 80px;
