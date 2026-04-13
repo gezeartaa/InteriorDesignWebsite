@@ -44,6 +44,11 @@ footer {
     display: flex;
     gap: 54px;
     margin-bottom: 182px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 100px;
+      
+    }
   }
   .footer__col--pages {
     li {

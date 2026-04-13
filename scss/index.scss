@@ -26,10 +26,14 @@
     left: 11%;
     transform: translateY(-50%);
 
+    @media (max-width: 900px) {
+      width: 400px;
+    }
+
     .display {
       margin-bottom: 10px;
-      @media (max-width: 1024px) {
-        font-size: 60px;
+      @media (max-width: 900px) {
+        font-size: 45px;
       }
     }
 
@@ -97,11 +101,20 @@
     height: 700px;
     border-bottom-left-radius: 130px;
     border-top-right-radius: 270px;
+
+    @media (max-width: 900px) {
+      width: 50%;
+      height: 600px;
+    }
   }
   &__text {
     margin: 40px 0;
     h1 {
       margin-bottom: 33px;
+
+      @media (max-width: 900px) {
+        font-size: 40px;
+      }
     }
     img {
       width: 93px;
@@ -150,8 +163,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 240px;
+      width: fit-content;
       transition: 0.3s;
+
       &:hover {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       }
@@ -163,6 +177,10 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
+
+          @media (max-width: 900px) {
+            font-size: 12px;
+          }
 
           span {
             font-size: fonts.$medium-paragraph;
@@ -198,12 +216,20 @@
   .description {
     margin-top: 8px;
     margin-bottom: 93px;
+    text-align: center;
+
   }
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 100px;
     column-gap: 55px;
+
+    @media (max-width: 900px) {
+      row-gap:70px;
+      column-gap: 40px;
+      
+    }
 
     .example {
       width: 450px;
@@ -218,6 +244,11 @@
       }
       &--fourth {
         border-bottom-left-radius: 70px;
+      }
+
+      @media (max-width: 900px) {
+        width: 350px;
+        
       }
     }
     .project__name {
@@ -262,9 +293,17 @@
   h1 {
     color: colors.$primary-color1;
     font-size: 80px;
+
+      @media (max-width: 900px) {
+      font-size: 60px;
+    }
   }
   p {
     font-size: fonts.$medium-paragraph;
+
+      @media (max-width: 900px) {
+      font-size: fonts.$small-paragraph;
+    }
   }
   .statistic {
     text-align: center;
@@ -274,6 +313,11 @@
     &:last-child {
       border-right: none;
       padding-right: 0;
+    }
+
+    @media (max-width: 900px) {
+      padding: 0 10px;
+      padding-right: 35px;
     }
   }
 }
@@ -376,10 +420,19 @@
   h1 {
     color: colors.$color-white;
     margin-bottom: 11px;
+
   }
   p {
     font-size: fonts.$large-paragraph;
     color: colors.$color-white;
     margin-bottom: 32px;
   }
+
+     @media (max-width: 900px) {
+
+      padding: 50px 180px;
+    h1 {
+      font-size: 40px;
+    }
+    }
 }
