@@ -1,5 +1,6 @@
 @use "fonts";
 @use "colors";
+@use "sass:color";
 
 button {
   display: inline-flex;
@@ -25,7 +26,7 @@ button {
   }
 
   &:hover {
-    background-color: darken(colors.$primary-color2, 5%);
+    background-color: color.adjust(colors.$primary-color2, $lightness: -5%);
   }
 }
 

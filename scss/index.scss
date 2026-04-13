@@ -28,6 +28,9 @@
 
     .display {
       margin-bottom: 10px;
+      @media (max-width: 1024px) {
+        font-size: 60px;
+      }
     }
 
     p {

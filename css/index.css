@@ -119,6 +119,11 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
 }
+@media (max-width: 900px) {
+  .main__wrapper {
+    max-width: 700px;
+  }
+}
 
 header div {
   margin: 28px 0;
@@ -293,6 +298,11 @@ footer .copyright {
 }
 .hero .hero__content .display {
   margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .hero .hero__content .display {
+    font-size: 60px;
+  }
 }
 .hero .hero__content p {
   margin-bottom: 20px;
