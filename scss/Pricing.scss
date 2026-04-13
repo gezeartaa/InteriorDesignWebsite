@@ -1,8 +1,119 @@
 @use "header";
 @use "footer";
 @use "mainImage";
+@use "colors";
+@use "fonts";
+@use "typography";
+@use "buttons";
+@use "lists";
+@use "paragraph";
 
 .hero {
   background: url("../images/Pricing main img.svg") center/cover no-repeat;
-  margin-bottom: 0px;
+}
+.pricing {
+  &__container {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+  }
+
+  &__card {
+    background: colors.$primary-color3;
+    border-radius: 33px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    width: 100%;
+    max-width: 368px;
+    position: relative;
+
+    &--featured {
+      h3 {
+        line-height: 150%;
+        letter-spacing: 1%;
+      }
+      .display {
+        color: colors.$primary-color1;
+      }
+      .features2 {
+        margin-top: -1px;
+      }
+    }
+
+    &--features {
+      padding-top: 67px;
+      padding-bottom: 67px;
+    }
+  }
+
+  .price2 {
+    border-bottom: 1px solid #292f36;
+  }
+  &__badge {
+    position: relative;
+    z-index: 1;
+    top: -15px;
+    background: colors.$primary-color2;
+    color: colors.$color-white;
+    padding: 10px 38px;
+    border-radius: 18px;
+    width: 238px;
+
+    font-family: fonts.$font-body;
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: 2%;
+    font-weight: fonts.$semibold-font;
+  }
+
+  &__price {
+    padding-bottom: 37px;
+    border-bottom: 1px solid #cda274;
+
+    .pricing__currency {
+      line-height: 150%;
+      letter-spacing: 1%;
+      font-family: fonts.$font-heading;
+      font-size: 25px;
+      color: colors.$primary-color2;
+      font-weight: fonts.$regular-font;
+      padding-top: 75px;
+    }
+    h3 {
+      line-height: 150%;
+      letter-spacing: 1%;
+    }
+  }
+
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin-top: 28px;
+
+    li {
+      // margin-bottom: 30px; figma
+      font-size: 20px;
+      line-height: 250%;
+    }
+  }
+
+  &__btn {
+    background: colors.$primary-color1;
+    border: none;
+    padding: 26px 48px;
+    margin-top: 28px;
+    border-radius: 18px;
+    height: 75px;
+    cursor: pointer;
+
+    &--dark {
+      padding: 26px 48px;
+      background: colors.$primary-color2;
+    }
+    &:hover {
+      background-color: darken(colors.$color-white, 0%);
+      color: colors.$primary-color2;
+    }
+  }
 }
