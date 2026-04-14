@@ -92,10 +92,19 @@ button .arrow {
 button:hover {
   background-color: rgb(29.9947368421, 34.3842105263, 39.5052631579);
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   button {
     font-size: 14px;
     padding: 20px 40px;
+  }
+}
+@media (max-width: 400px) {
+  button {
+    font-size: 8px;
+    padding: 10px 20px;
+  }
+  button .arrow {
+    font-size: 14px;
   }
 }
 
@@ -133,6 +142,11 @@ body {
 @media (max-width: 700px) {
   .main__wrapper {
     max-width: 550px;
+  }
+}
+@media (max-width: 400px) {
+  .main__wrapper {
+    max-width: 350px;
   }
 }
 
@@ -367,15 +381,18 @@ footer .copyright {
   overflow: hidden;
   margin-bottom: 100px;
 }
-@media (max-width: 650px) {
-  .hero {
-    margin-bottom: 20px;
-  }
-}
 .hero img {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   border-bottom-left-radius: 200px;
+}
+@media (max-width: 650px) {
+  .hero {
+    margin-bottom: 20px;
+  }
+  .hero img {
+    border-bottom-left-radius: 150px;
+  }
 }
 .hero .hero__content {
   position: absolute;
@@ -386,16 +403,6 @@ footer .copyright {
 }
 .hero .hero__content .display {
   margin-bottom: 10px;
-}
-@media (max-width: 900px) {
-  .hero .hero__content .display {
-    font-size: 45px;
-  }
-}
-@media (max-width: 900px) and (max-width: 700px) {
-  .hero .hero__content .display {
-    font-size: 40px;
-  }
 }
 .hero .hero__content p {
   margin-bottom: 20px;
@@ -417,6 +424,19 @@ footer .copyright {
   }
   .hero .hero__content .display {
     font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .hero .hero__content {
+    width: 150px;
+    top: 43%;
+  }
+  .hero .hero__content .display {
+    font-size: 20px;
+  }
+  .hero .hero__content p {
+    font-size: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -524,10 +544,16 @@ footer .copyright {
   .estimate__text h1 {
     font-size: 40px;
   }
+  .estimate__info {
+    margin: 30px 0;
+  }
 }
 @media (max-width: 700px) {
+  .estimate {
+    gap: 50px;
+  }
   .estimate__kitchen {
-    width: 40%;
+    width: 50%;
     height: 500px;
   }
   .estimate__text h1 {
