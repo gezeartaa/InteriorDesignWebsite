@@ -392,9 +392,9 @@ footer .copyright {
     font-size: 45px;
   }
 }
-@media (max-width: 900px) and (max-width: 7000px) {
+@media (max-width: 900px) and (max-width: 700px) {
   .hero .hero__content .display {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 .hero .hero__content p {
@@ -526,14 +526,21 @@ footer .copyright {
   }
 }
 @media (max-width: 700px) {
+  .estimate__kitchen {
+    width: 40%;
+    height: 500px;
+  }
   .estimate__text h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .estimate__text img {
-    height: 65px;
+    height: 60px;
   }
   .estimate__text p {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .estimate__text p span {
+    font-size: 18px;
   }
 }
 
