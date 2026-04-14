@@ -92,6 +92,12 @@ button .arrow {
 button:hover {
   background-color: rgb(29.9947368421, 34.3842105263, 39.5052631579);
 }
+@media (max-width: 650px) {
+  button {
+    font-size: 14px;
+    padding: 20px 40px;
+  }
+}
 
 .button--primary {
   background-color: #cda274;
@@ -122,6 +128,11 @@ body {
 @media (max-width: 900px) {
   .main__wrapper {
     max-width: 800px;
+  }
+}
+@media (max-width: 700px) {
+  .main__wrapper {
+    max-width: 550px;
   }
 }
 
@@ -356,6 +367,11 @@ footer .copyright {
   overflow: hidden;
   margin-bottom: 100px;
 }
+@media (max-width: 650px) {
+  .hero {
+    margin-bottom: 20px;
+  }
+}
 .hero img {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -368,11 +384,6 @@ footer .copyright {
   left: 11%;
   transform: translateY(-50%);
 }
-@media (max-width: 900px) {
-  .hero .hero__content {
-    width: 400px;
-  }
-}
 .hero .hero__content .display {
   margin-bottom: 10px;
 }
@@ -381,8 +392,32 @@ footer .copyright {
     font-size: 45px;
   }
 }
+@media (max-width: 900px) and (max-width: 7000px) {
+  .hero .hero__content .display {
+    font-size: 30px;
+  }
+}
 .hero .hero__content p {
   margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .hero .hero__content {
+    width: 400px;
+  }
+  .hero .hero__content .display {
+    font-size: 45px;
+  }
+  .hero .hero__content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .hero .hero__content {
+    width: 200px;
+  }
+  .hero .hero__content .display {
+    font-size: 30px;
+  }
 }
 
 .summaries {
@@ -428,6 +463,19 @@ footer .copyright {
   font-size: 18px;
   color: #cda274;
 }
+@media (max-width: 700px) {
+  .summaries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .summaries article {
+    width: 350px;
+    margin-bottom: 0;
+    padding: 60px 10px;
+  }
+}
 
 .estimate {
   display: flex;
@@ -440,22 +488,11 @@ footer .copyright {
   border-bottom-left-radius: 130px;
   border-top-right-radius: 270px;
 }
-@media (max-width: 900px) {
-  .estimate__kitchen {
-    width: 50%;
-    height: 600px;
-  }
-}
 .estimate__text {
   margin: 40px 0;
 }
 .estimate__text h1 {
   margin-bottom: 33px;
-}
-@media (max-width: 900px) {
-  .estimate__text h1 {
-    font-size: 40px;
-  }
 }
 .estimate__text img {
   width: 93px;
@@ -478,6 +515,26 @@ footer .copyright {
 }
 .estimate button {
   padding: 26px 31px;
+}
+@media (max-width: 900px) {
+  .estimate__kitchen {
+    width: 50%;
+    height: 600px;
+  }
+  .estimate__text h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .estimate__text h1 {
+    font-size: 35px;
+  }
+  .estimate__text img {
+    height: 65px;
+  }
+  .estimate__text p {
+    font-size: 14px;
+  }
 }
 
 .aboutUs {
@@ -520,11 +577,6 @@ footer .copyright {
   flex-direction: column;
   justify-content: center;
 }
-@media (max-width: 900px) {
-  .aboutUs div article div p {
-    font-size: 12px;
-  }
-}
 .aboutUs div article div p span {
   font-size: 20px;
   font-weight: 700;
@@ -538,6 +590,20 @@ footer .copyright {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+}
+@media (max-width: 900px) {
+  .aboutUs div p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .aboutUs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+  }
 }
 
 .clients {
@@ -564,12 +630,6 @@ footer .copyright {
   row-gap: 100px;
   column-gap: 55px;
 }
-@media (max-width: 900px) {
-  .ourProjects__container {
-    row-gap: 70px;
-    column-gap: 40px;
-  }
-}
 .ourProjects__container .example {
   width: 450px;
 }
@@ -584,11 +644,6 @@ footer .copyright {
 }
 .ourProjects__container .example--fourth {
   border-bottom-left-radius: 70px;
-}
-@media (max-width: 900px) {
-  .ourProjects__container .example {
-    width: 350px;
-  }
 }
 .ourProjects__container .project__name {
   margin-top: 24px;
@@ -614,6 +669,33 @@ footer .copyright {
   width: 70px;
   height: 70px;
 }
+@media (max-width: 900px) {
+  .ourProjects__container {
+    row-gap: 70px;
+    column-gap: 40px;
+  }
+  .ourProjects__container .example {
+    width: 350px;
+  }
+}
+@media (max-width: 700px) {
+  .ourProjects__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .ourProjects__container .example--first {
+    border-top-left-radius: 70px;
+  }
+  .ourProjects__container .example--second {
+    border-top-left-radius: 0;
+  }
+  .ourProjects__container .example--third {
+    border-bottom-right-radius: 0;
+  }
+  .ourProjects__container .example--fourth {
+    border-bottom-right-radius: 70px;
+  }
+}
 
 .statistics {
   width: 100vw;
@@ -625,6 +707,12 @@ footer .copyright {
   padding: 100px 0;
   justify-content: center;
 }
+@media (max-width: 700px) {
+  .statistics {
+    gap: 30px;
+    padding: 70px 0;
+  }
+}
 .statistics h1 {
   color: #cda274;
   font-size: 80px;
@@ -634,12 +722,22 @@ footer .copyright {
     font-size: 60px;
   }
 }
+@media (max-width: 700px) {
+  .statistics h1 {
+    font-size: 40px;
+  }
+}
 .statistics p {
   font-size: 20px;
 }
 @media (max-width: 900px) {
   .statistics p {
     font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .statistics p {
+    font-size: 12px;
   }
 }
 .statistics .statistic {
@@ -656,6 +754,12 @@ footer .copyright {
   .statistics .statistic {
     padding: 0 10px;
     padding-right: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .statistics .statistic {
+    padding: 0 4px;
+    padding-right: 30px;
   }
 }
 
@@ -678,6 +782,16 @@ footer .copyright {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+}
+@media (max-width: 700px) {
+  .news .description {
+    font-size: 18px;
+    width: 100%;
+  }
+  .news__container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 .card {
@@ -703,6 +817,11 @@ footer .copyright {
 }
 .card h3:hover {
   color: #cda274;
+}
+@media (max-width: 700px) {
+  .card {
+    width: 70%;
+  }
 }
 
 .card__image {
@@ -762,6 +881,14 @@ footer .copyright {
   }
   .contact h1 {
     font-size: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .contact {
+    padding: 40px 50px;
+  }
+  .contact h1 {
+    font-size: 30px;
   }
 }
 

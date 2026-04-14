@@ -1,9 +1,5 @@
 @use "colors";
 @use "fonts";
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 @use "typography";
 @use "paragraph";
 @use "buttons";
@@ -25,6 +21,11 @@ body {
 
   @media (max-width: 900px) {
     max-width: 800px;
+  }
+
+  @media (max-width: 700px) {
+    max-width: 550px;
+    
   }
 }
 header {

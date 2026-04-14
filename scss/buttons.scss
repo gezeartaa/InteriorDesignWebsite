@@ -28,6 +28,11 @@ button {
   &:hover {
     background-color: color.adjust(colors.$primary-color2, $lightness: -5%);
   }
+
+   @media (max-width: 650px) {
+     font-size: 14px;
+     padding: 20px 40px;
+    }
 }
 
 .button--large {
