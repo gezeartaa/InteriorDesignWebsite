@@ -94,7 +94,7 @@
   }
 
   &__pager {
-    margin-top: -210px; //qe e kom he atje 270 kjo o ka 60 =210
+    margin-top: -210px; //qe e kom hek atje 270 kjo o ka 60 =210
     //margin-top: 60px;
     display: flex;
     justify-content: center;
@@ -125,5 +125,10 @@
       color: colors.$primary-color2;
       border: none;
     }
+  }
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 }
