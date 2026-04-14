@@ -1,0 +1,91 @@
+@use "header";
+@use "footer";
+@use "mainImage";
+@use "colors";
+@use "fonts";
+@use "typography";
+@use "buttons";
+@use "lists";
+@use "paragraph";
+
+.hero {
+  background: url("../images/ProjectDetails main img.svg") center/cover
+    no-repeat;
+}
+
+.details {
+  display: flex;
+  gap: 42px;
+  align-items: flex-start;
+  margin-bottom: 100px;
+
+  &__card {
+    margin-top: 29px;
+    margin-bottom: 29px;
+    background: colors.$primary-color3;
+    border-radius: 70px;
+
+    .details__info {
+      padding: 45px 75px 15px 75px; // e 3ta 55-40 label margin bottom
+    } //ne figma 55px 84px 15px 84px
+
+    .details__row {
+      display: grid;
+      grid-template-columns: 150px 1fr; // kolona e parë fikse
+      align-items: start;
+
+      .details__label {
+        h4 {
+          line-height: 150%;
+          letter-spacing: 1%;
+          margin-bottom: 40px;
+          font-size: 18px;
+        }
+      }
+
+      .details__value {
+        h4 {
+          font-size: 18px;
+          font-family: fonts.$font-body;
+          line-height: 150%;
+          letter-spacing: 1%;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  &__description {
+    width: 658px;
+    h1 {
+      margin-bottom: 11px;
+      font-size: 46px; //figma 50
+    }
+
+    .text1 {
+      margin-bottom: 50px;
+    }
+  }
+  &__image {
+    height: 799px;
+    border-radius: 50px;
+    background: url("../images/ProjectDetails search.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--wrapper {
+      background: colors.$color-white;
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: colors.$primary-color2;
+      }
+    }
+  }
+}

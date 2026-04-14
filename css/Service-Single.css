@@ -1,14 +1,197 @@
-/* Error: expected "{".
- *    ,
- * 10 | @use "mainImage";
- *    |                 ^
- *    '
- *   scss\Service-Single.scss 10:17  root stylesheet */
+.display {
+  font-family: "DM Serif Display", serif;
+  font-size: 85px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 35px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "DM Serif Display", serif;
+  font-size: 22px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: "DM Serif Display", serif;
+  font-size: 18px;
+  line-height: 125%;
+  color: #292f36;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Jost", sans-serif;
+  line-height: 150%;
+  color: #4d5053;
+  letter-spacing: 1%;
+}
+
+.email {
+  font-family: "Jost", sans-serif;
+  line-height: 300%;
+  color: #4d5053;
+  letter-spacing: 1%;
+  font-size: 22px;
+}
+
+ol {
+  font-family: "Jost", sans-serif;
+  color: #4d5053;
+  line-height: 270%;
+  letter-spacing: 1%;
+}
+ol ::marker {
+  color: #cda274;
+}
+
+li {
+  font-family: "Jost", sans-serif;
+  color: #4d5053;
+  line-height: 300%;
+  letter-spacing: 1%;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 26px 54px;
+  border-radius: 18px;
+  border: none;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 2%;
+  font-weight: 600;
+  color: #ffffff;
+  align-items: center;
+  gap: 10px;
+  background-color: #292f36;
+}
+button .arrow {
+  font-size: 18px;
+  color: #cda274;
+}
+button:hover {
+  background-color: rgb(29.9947368421, 34.3842105263, 39.5052631579);
+}
+
+.button--primary {
+  background-color: #cda274;
+}
+.button--primary .arrow {
+  color: #292f36;
+}
+.button--primary:hover {
+  background-color: rgb(198.253968254, 149.4523809524, 97.246031746);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main__wrapper {
+  border: 1px solid red;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header div {
+  margin: 28px 0;
+  display: flex;
+  align-items: center;
+}
+header div nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+header div nav .nav__links {
+  display: flex;
+  gap: 50px;
+  position: relative;
+}
+header div nav .nav__links a {
+  text-decoration: none;
+  color: #292f36;
+  line-height: 125%;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+}
+header div nav .nav__links a:hover {
+  color: #cda274;
+}
+header div nav .nav__links .nav__item {
+  position: relative;
+}
+header div nav .nav__links .nav__item a {
+  text-decoration: none;
+  color: #292f36;
+  line-height: 125%;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+}
+header div nav .nav__links .nav__item:hover {
+  color: #cda274;
+}
+header div nav .nav__links .nav__item.dropdown .dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  z-index: 100;
+}
+header div nav .nav__links .nav__item.dropdown .dropdown__menu li a {
+  padding: 10px;
   display: block;
   padding: 1em;
   margin-bottom: 1em;

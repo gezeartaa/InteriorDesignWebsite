@@ -1,0 +1,129 @@
+@use "header";
+@use "footer";
+@use "mainImage";
+@use "colors";
+@use "fonts";
+@use "typography";
+@use "buttons";
+@use "lists";
+@use "paragraph";
+
+.hero {
+  background: url("../images/Project main img.svg") center/cover no-repeat;
+}
+
+.projects {
+  .projects__card:nth-child(4),
+  .projects__card:nth-child(5),
+  .projects__card:nth-child(6),
+  .projects__card:nth-child(7) {
+    position: relative;
+    top: -270px;
+  }
+  .projects__card:last-child {
+    position: relative;
+    top: -570px;
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: center;
+    gap: 96px;
+    // margin-left: 160px;
+    // margin-right: 160px;
+    margin-bottom: 61px;
+
+    border-radius: 18px;
+    border: 1px solid #cda274;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h6 {
+    font-family: fonts.$font-body;
+    font-weight: fonts.$semibold-font;
+    letter-spacing: 2%;
+    border-radius: 18px;
+    padding: 26px 25px;
+    border: none;
+    background: transparent;
+
+    &:hover {
+      background: colors.$primary-color1;
+      color: colors.$color-white;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__card {
+    width: calc(50% - 15px);
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  &__info {
+    position: relative;
+    margin-bottom: 35px;
+
+    h3 {
+      letter-spacing: 2%;
+      margin-bottom: 4px;
+    }
+    p {
+      font-size: 22px;
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__pager {
+    margin-top: -210px; //qe e kom he atje 270 kjo o ka 60 =210
+    //margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__page {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #cda274;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fonts.$font-body;
+    font-size: 16px;
+    font-weight: fonts.$medium-font;
+    line-height: 150%;
+
+    &:hover {
+      background: colors.$primary-color3;
+      color: colors.$primary-color2;
+      border: none;
+    }
+
+    &--active {
+      background: colors.$primary-color3;
+      color: colors.$primary-color2;
+      border: none;
+    }
+  }
+}
