@@ -101,7 +101,7 @@ button:hover {
 @media (max-width: 400px) {
   button {
     font-size: 8px;
-    padding: 10px 20px;
+    padding: 20px 20px;
   }
   button .arrow {
     font-size: 14px;
@@ -386,7 +386,7 @@ footer .copyright {
   margin-left: calc(-50vw + 50%);
   border-bottom-left-radius: 200px;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   .hero {
     margin-bottom: 20px;
   }
@@ -496,6 +496,12 @@ footer .copyright {
     padding: 60px 10px;
   }
 }
+@media (max-width: 400px) {
+  .summaries article {
+    width: 300px;
+    padding: 50px 10px;
+  }
+}
 
 .estimate {
   display: flex;
@@ -569,6 +575,21 @@ footer .copyright {
     font-size: 18px;
   }
 }
+@media (max-width: 400px) {
+  .estimate {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .estimate__kitchen {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 130px;
+  }
+  .estimate__text {
+    margin-bottom: 0;
+  }
+}
 
 .aboutUs {
   display: flex;
@@ -582,6 +603,12 @@ footer .copyright {
 .aboutUs h1 {
   width: 547px;
   text-align: center;
+}
+@media (max-width: 400px) {
+  .aboutUs h1 {
+    font-size: 30px;
+    width: 90%;
+  }
 }
 .aboutUs div {
   display: flex;
@@ -638,6 +665,14 @@ footer .copyright {
     text-align: center;
   }
 }
+@media (max-width: 400px) {
+  .aboutUs div {
+    width: 200px;
+  }
+  .aboutUs div article {
+    padding: 40px 37px;
+  }
+}
 
 .clients {
   margin: 150px 55px;
@@ -651,6 +686,14 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
   margin-bottom: 150px;
+}
+.ourProjects h1 {
+  margin-bottom: 10px;
+}
+@media (max-width: 400px) {
+  .ourProjects h1 {
+    text-align: center;
+  }
 }
 .ourProjects .description {
   margin-top: 8px;
@@ -746,6 +789,11 @@ footer .copyright {
     padding: 70px 0;
   }
 }
+@media (max-width: 400px) {
+  .statistics {
+    display: grid;
+  }
+}
 .statistics h1 {
   color: #cda274;
   font-size: 80px;
@@ -795,6 +843,18 @@ footer .copyright {
     padding-right: 30px;
   }
 }
+@media (max-width: 400px) {
+  .statistics .statistic {
+    border-right: 0;
+    border-bottom: 1px solid #cda274;
+    padding: 0 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
+  .statistics .statistic:last-child {
+    border-bottom: none;
+  }
+}
 
 .news {
   display: flex;
@@ -824,6 +884,11 @@ footer .copyright {
   .news__container {
     grid-template-columns: 1fr;
     justify-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .news .description {
+    font-size: 14px;
   }
 }
 
@@ -922,6 +987,18 @@ footer .copyright {
   }
   .contact h1 {
     font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .contact {
+    padding: 40px 40px;
+  }
+  .contact h1 {
+    font-size: 25px;
+  }
+  .contact p {
+    font-size: 18px;
+    text-align: center;
   }
 }
 
