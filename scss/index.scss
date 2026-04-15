@@ -62,7 +62,7 @@
       }
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 550px) {
       width: 150px;
       top: 43%;
 
@@ -72,6 +72,17 @@
       p {
         font-size: 10px;
         margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 440px) {
+      
+
+      .display {
+        font-size: 18px;
+      }
+      p {
+        font-size: 9px;
+        margin-bottom: 7px;
       }
     }
   }
@@ -524,7 +535,6 @@
     .description {
       font-size: 14px;
     }
-    
   }
 }
 
@@ -632,7 +642,7 @@
     h1 {
       font-size: 25px;
     }
-    p{
+    p {
       font-size: fonts.$small-paragraph;
       text-align: center;
     }

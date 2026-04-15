@@ -98,13 +98,19 @@ button:hover {
     padding: 20px 40px;
   }
 }
+@media (max-width: 550px) {
+  button {
+    font-size: 9px;
+    padding: 17px 20px;
+  }
+}
 @media (max-width: 400px) {
   button {
     font-size: 8px;
-    padding: 20px 20px;
+    padding: 15px 18px;
   }
   button .arrow {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -154,6 +160,16 @@ header div {
   margin: 28px 0;
   display: flex;
   align-items: center;
+}
+@media (max-width: 700px) {
+  header div .logo img {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  header div .logo img {
+    width: 50%;
+  }
 }
 header div nav {
   display: flex;
@@ -426,7 +442,7 @@ footer .copyright {
     font-size: 30px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .hero .hero__content {
     width: 150px;
     top: 43%;
@@ -437,6 +453,15 @@ footer .copyright {
   .hero .hero__content p {
     font-size: 10px;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 440px) {
+  .hero .hero__content .display {
+    font-size: 18px;
+  }
+  .hero .hero__content p {
+    font-size: 9px;
+    margin-bottom: 7px;
   }
 }
 
