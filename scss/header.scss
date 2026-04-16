@@ -32,7 +32,6 @@ body {
 }
 header {
   div {
-    margin: 28px 0;
     display: flex;
     align-items: center;
 
@@ -83,9 +82,6 @@ header {
         a {
           text-decoration: none;
           color: colors.$primary-color2;
-          line-height: 125%;
-          font-size: 20px;
-          font-family: fonts.$font-body;
         }
 
         &:hover {
@@ -161,40 +157,26 @@ header {
   .nav__links {
     display: none !important;
     position: absolute;
-    top: 100%;
+    // top: 80px;
     left: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 160px;
+    //  background-color: #fff;
+    //  border: 1px solid #ddd;
+    //  list-style: none;
+    //  padding: 0;
+    // margin: 0;
+    //  width: 160px;
     z-index: 100;
   }
 
   #navCheck:checked ~ .nav__links {
     display: flex !important;
     flex-direction: column;
-    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 400px;
+    width: 30%;
+    margin: 0;
     background: white;
-    padding: 10px 0;
-  }
-
-  .nav__links a {
-    padding: 12px 20px;
-  }
-
-  .nav__item.dropdown {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .dropdown__menu {
-    display: none;
-    padding-left: 20px;
-  }
-
-  .nav__item.dropdown:hover .dropdown__menu {
-    display: flex;
+    border: 1px solid #ddd;
   }
 }
