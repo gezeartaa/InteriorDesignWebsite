@@ -133,3 +133,19 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .content {
+    margin-bottom: 150px;
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+  }
+  .brands {
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+  }
+}
