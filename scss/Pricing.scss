@@ -16,6 +16,11 @@
     display: flex;
     gap: 48px;
     justify-content: center;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__card {
@@ -33,6 +38,7 @@
         line-height: 150%;
         letter-spacing: 1%;
       }
+
       .display {
         color: colors.$primary-color1;
       }
@@ -40,10 +46,17 @@
         margin-top: -1px;
       }
     }
-
     &--features {
       padding-top: 67px;
       padding-bottom: 67px;
+    }
+    @media (max-width: 400px) {
+      h3 {
+        font-size: 20px;
+      }
+      .display {
+        font-size: 65px;
+      }
     }
   }
 
@@ -58,7 +71,7 @@
     color: colors.$color-white;
     padding: 10px 38px;
     border-radius: 18px;
-    width: 238px;
+    width: 100%;
 
     font-family: fonts.$font-body;
     font-size: 18px;
@@ -79,6 +92,10 @@
       color: colors.$primary-color2;
       font-weight: fonts.$regular-font;
       padding-top: 75px;
+
+      @media (max-width: 400px) {
+        font-size: 20px;
+      }
     }
     h3 {
       line-height: 150%;
@@ -95,6 +112,11 @@
       // margin-bottom: 30px; figma
       font-size: 20px;
       line-height: 250%;
+    }
+    @media (max-width: 400px) {
+      li {
+        font-size: 16px;
+      }
     }
   }
 
@@ -114,6 +136,11 @@
     &:hover {
       background-color: darken(colors.$color-white, 0%);
       color: colors.$primary-color2;
+    }
+
+    @media (max-width: 400px) {
+      padding: 23px 35px;
+      height: 40px;
     }
   }
 }
