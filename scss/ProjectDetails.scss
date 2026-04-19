@@ -19,6 +19,12 @@
   align-items: flex-start;
   margin-bottom: 100px;
 
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__card {
     margin-top: 29px;
     margin-bottom: 29px;
@@ -27,12 +33,21 @@
 
     .details__info {
       padding: 45px 75px 15px 75px; // e 3ta 55-40 label margin bottom
-    } //ne figma 55px 84px 15px 84px
+      //ne figma 55px 84px 15px 84px
+
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+    }
 
     .details__row {
       display: grid;
       grid-template-columns: 150px 1fr; // kolona e parë fikse
       align-items: start;
+
+      @media (max-width: 700px) {
+        grid-template-columns: 1fr;
+      }
 
       .details__label {
         h4 {
@@ -40,6 +55,13 @@
           letter-spacing: 1%;
           margin-bottom: 40px;
           font-size: 18px;
+          @media (max-width: 700px) {
+            margin-bottom: 5px;
+          }
+
+          @media (max-width: 400px) {
+            margin-bottom: 0;
+          }
         }
       }
 
@@ -60,10 +82,21 @@
     h1 {
       margin-bottom: 11px;
       font-size: 46px; //figma 50
+
+      @media (max-width: 700px) {
+        font-size: 40px;
+      }
+      @media (max-width: 400px) {
+        font-size: 35px;
+      }
     }
 
     .text1 {
       margin-bottom: 50px;
+    }
+
+    @media (max-width: 900px) {
+      width: 100%;
     }
   }
   &__image {
@@ -73,6 +106,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 700px) {
+      height: 600px;
+    }
+    @media (max-width: 400px) {
+      height: 450px;
+    }
 
     &--wrapper {
       background: colors.$color-white;
@@ -85,6 +125,25 @@
 
       &:hover {
         background: colors.$primary-color2;
+      }
+
+      @media (max-width: 700px) {
+        width: 130px;
+        height: 130px;
+
+        img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      @media (max-width: 400px) {
+        width: 100px;
+        height: 100px;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }

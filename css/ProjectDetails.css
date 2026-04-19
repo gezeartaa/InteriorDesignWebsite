@@ -421,6 +421,13 @@ footer .copyright {
   align-items: flex-start;
   margin-bottom: 100px;
 }
+@media (max-width: 900px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .details__card {
   margin-top: 29px;
   margin-bottom: 29px;
@@ -430,16 +437,36 @@ footer .copyright {
 .details__card .details__info {
   padding: 45px 75px 15px 75px;
 }
+@media (max-width: 400px) {
+  .details__card .details__info {
+    width: 100%;
+  }
+}
 .details__card .details__row {
   display: grid;
   grid-template-columns: 150px 1fr;
   align-items: start;
+}
+@media (max-width: 700px) {
+  .details__card .details__row {
+    grid-template-columns: 1fr;
+  }
 }
 .details__card .details__row .details__label h4 {
   line-height: 150%;
   letter-spacing: 1%;
   margin-bottom: 40px;
   font-size: 18px;
+}
+@media (max-width: 700px) {
+  .details__card .details__row .details__label h4 {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 400px) {
+  .details__card .details__row .details__label h4 {
+    margin-bottom: 0;
+  }
 }
 .details__card .details__row .details__value h4 {
   font-size: 18px;
@@ -455,8 +482,23 @@ footer .copyright {
   margin-bottom: 11px;
   font-size: 46px;
 }
+@media (max-width: 700px) {
+  .details__description h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .details__description h1 {
+    font-size: 35px;
+  }
+}
 .details__description .text1 {
   margin-bottom: 50px;
+}
+@media (max-width: 900px) {
+  .details__description {
+    width: 100%;
+  }
 }
 .details__image {
   height: 799px;
@@ -465,6 +507,16 @@ footer .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 700px) {
+  .details__image {
+    height: 600px;
+  }
+}
+@media (max-width: 400px) {
+  .details__image {
+    height: 450px;
+  }
 }
 .details__image--wrapper {
   background: #ffffff;
@@ -477,6 +529,26 @@ footer .copyright {
 }
 .details__image--wrapper:hover {
   background: #292f36;
+}
+@media (max-width: 700px) {
+  .details__image--wrapper {
+    width: 130px;
+    height: 130px;
+  }
+  .details__image--wrapper img {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 400px) {
+  .details__image--wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .details__image--wrapper img {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 /*# sourceMappingURL=ProjectDetails.css.map */
