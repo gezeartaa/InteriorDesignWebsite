@@ -422,9 +422,37 @@ footer .copyright {
   position: relative;
   top: -270px;
 }
+@media (max-width: 900px) {
+  .projects .projects__card:nth-child(4),
+  .projects .projects__card:nth-child(5),
+  .projects .projects__card:nth-child(6),
+  .projects .projects__card:nth-child(7) {
+    top: -210px;
+  }
+}
+@media (max-width: 700px) {
+  .projects .projects__card:nth-child(4),
+  .projects .projects__card:nth-child(5),
+  .projects .projects__card:nth-child(6),
+  .projects .projects__card:nth-child(7) {
+    top: 0;
+    position: static;
+  }
+}
 .projects .projects__card:last-child {
   position: relative;
   top: -570px;
+}
+@media (max-width: 900px) {
+  .projects .projects__card:last-child {
+    top: -450px;
+  }
+}
+@media (max-width: 700px) {
+  .projects .projects__card:last-child {
+    top: 0;
+    position: static;
+  }
 }
 .projects__filters {
   display: flex;
@@ -437,29 +465,60 @@ footer .copyright {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 900px) {
+  .projects__filters {
+    gap: 45px;
+  }
+}
+@media (max-width: 700px) {
+  .projects__filters {
+    gap: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .projects__filters {
+    gap: 10px;
+  }
+}
 .projects h6 {
   font-family: "Jost", sans-serif;
   font-weight: 600;
   letter-spacing: 2%;
   border-radius: 18px;
   padding: 26px 25px;
-  border: none;
   background: transparent;
 }
 .projects h6:hover {
   background: #cda274;
   color: #ffffff;
 }
+@media (max-width: 700px) {
+  .projects h6 {
+    padding: 20px 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .projects h6 {
+    padding: 15px 5px;
+    font-size: 10px;
+  }
+}
 .projects a {
   text-decoration: none;
 }
 .projects__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+@media (max-width: 700px) {
+  .projects__list {
+    grid-template-columns: 1fr;
+  }
+}
 .projects__card {
-  width: calc(50% - 15px);
+  width: 100%;
 }
 .projects__image {
   width: 100%;
@@ -487,6 +546,16 @@ footer .copyright {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+@media (max-width: 700px) {
+  .projects__pager {
+    margin-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  .projects__pager {
+    gap: 10px;
+  }
 }
 .projects__page {
   width: 52px;

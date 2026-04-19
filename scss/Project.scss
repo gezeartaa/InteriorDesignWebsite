@@ -19,10 +19,26 @@
   .projects__card:nth-child(7) {
     position: relative;
     top: -270px;
+
+    @media (max-width: 900px) {
+      top: -210px;
+    }
+    @media (max-width: 700px) {
+      top: 0;
+      position: static;
+    }
   }
   .projects__card:last-child {
     position: relative;
     top: -570px;
+
+    @media (max-width: 900px) {
+      top: -450px;
+    }
+    @media (max-width: 700px) {
+      top: 0;
+      position: static;
+    }
   }
 
   &__filters {
@@ -38,6 +54,16 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+
+    @media (max-width: 900px) {
+      gap: 45px;
+    }
+    @media (max-width: 700px) {
+      gap: 20px;
+    }
+    @media (max-width: 400px) {
+      gap: 10px;
+    }
   }
 
   h6 {
@@ -46,12 +72,19 @@
     letter-spacing: 2%;
     border-radius: 18px;
     padding: 26px 25px;
-    border: none;
     background: transparent;
 
     &:hover {
       background: colors.$primary-color1;
       color: colors.$color-white;
+    }
+    @media (max-width: 700px) {
+      padding: 20px 10px;
+      font-size: 12px;
+    }
+    @media (max-width: 400px) {
+      padding: 15px 5px;
+      font-size: 10px;
     }
   }
   a {
@@ -59,13 +92,16 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-  }
 
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+  }
   &__card {
-    width: calc(50% - 15px);
+    width: 100%;
   }
 
   &__image {
@@ -99,6 +135,13 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    @media (max-width: 700px) {
+      margin-top: 0;
+    }
+    @media (max-width: 400px) {
+      gap: 10px;
+    }
   }
 
   &__page {
@@ -126,6 +169,7 @@
       border: none;
     }
   }
+
   &__pagination {
     display: flex;
     justify-content: center;
