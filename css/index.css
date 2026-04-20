@@ -107,7 +107,7 @@ button:hover {
 @media (max-width: 400px) {
   button {
     font-size: 8px;
-    padding: 15px 18px;
+    padding: 20px 20px;
   }
   button .arrow {
     font-size: 12px;
@@ -121,7 +121,7 @@ button:hover {
   color: #292f36;
 }
 .button--primary:hover {
-  background-color: rgb(198.253968254, 149.4523809524, 97.246031746);
+  background-color: rgb(29.9947368421, 34.3842105263, 39.5052631579);
 }
 
 * {
@@ -242,6 +242,10 @@ header .searchIcon {
 
 .nav__toggle {
   display: none;
+}
+
+.nav__toggle {
+  display: none;
   font-size: 30px;
   cursor: pointer;
   margin-left: auto;
@@ -249,19 +253,19 @@ header .searchIcon {
 }
 
 @media (max-width: 756px) {
-  .nav__toggle {
+  header .nav__toggle {
     display: block;
     font-size: 32px;
     cursor: pointer;
     margin-left: auto;
   }
-  .nav__links {
+  header .nav__links {
     display: none !important;
     position: absolute;
     left: 0;
     z-index: 100;
   }
-  #navCheck:checked ~ .nav__links {
+  header #navCheck:checked ~ .nav__links {
     display: flex !important;
     flex-direction: column;
     position: absolute;
@@ -781,22 +785,40 @@ footer .copyright {
   padding: 100px 0;
   justify-content: center;
 }
+@media (max-width: 950px) {
+  .statistics {
+    gap: 35px;
+  }
+}
+@media (max-width: 800px) {
+  .statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media (max-width: 700px) {
   .statistics {
-    gap: 30px;
-    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 400px) {
   .statistics {
     display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 .statistics h1 {
   color: #cda274;
   font-size: 80px;
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .statistics h1 {
     font-size: 60px;
   }
@@ -809,7 +831,7 @@ footer .copyright {
 .statistics p {
   font-size: 20px;
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .statistics p {
     font-size: 18px;
   }
@@ -829,7 +851,7 @@ footer .copyright {
   border-right: none;
   padding-right: 0;
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .statistics .statistic {
     padding: 0 10px;
     padding-right: 35px;
@@ -848,6 +870,7 @@ footer .copyright {
     padding: 0 0;
     padding-right: 0;
     padding-bottom: 40px;
+    margin: 0 150px;
   }
   .statistics .statistic:last-child {
     border-bottom: none;

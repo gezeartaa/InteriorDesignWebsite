@@ -31,6 +31,12 @@
     font-size: 25px;
    }
   }
+   @media (max-width: 400px) {
+    padding: 20px 40px;
+   h2 {
+    font-size: 15px;
+   }
+  }
 }
 
 .quote__icon {
@@ -39,6 +45,9 @@
   color: colors.$primary-color2;
    @media (max-width: 700px) {
    font-size: 50px;
+  }
+   @media (max-width: 400px) {
+   font-size: 40px;
   }
 }
 
@@ -55,6 +64,10 @@
   width: 210px;
   height: 450px;
   border: 15px solid #{colors.$primary-color3};
+    @media (max-width: 400px) {
+    width: 100px;
+    height: 300px;
+  }
 }
 
 .quote__card::before {
@@ -67,6 +80,9 @@
   @media (max-width: 700px) {
     left: -45px;
   }
+  @media (max-width: 400px) {
+    left: 0;
+  }
 }
 
 .quote__card::after {
@@ -78,6 +94,9 @@
   }
   @media (max-width: 700px) {
     right: -45px;
+  }
+  @media (max-width: 400px) {
+    right: 0;
   }
 }
 
@@ -130,6 +149,12 @@
   button {
     margin-top: 75px;
   }
+
+  @media (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+  }
+  }
 }
 
 .employes {
@@ -163,6 +188,13 @@
     h1 {
       width: 80%;
       text-align: center;
+    }
+  }
+
+  @media (max-width: 700px) {
+    &__info {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
@@ -203,3 +235,4 @@
     }
   }
 }
+
