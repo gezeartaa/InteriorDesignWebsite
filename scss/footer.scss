@@ -12,10 +12,8 @@ footer {
   .footer__container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     max-width: 1000px;
     margin-bottom: 134px;
-    // margin: 100px auto;
 
     gap: 40px;
     //padding: 0px typography.$sides-margin 134px typography.$sides-margin;
@@ -47,7 +45,6 @@ footer {
 
     @media (max-width: 900px) {
       margin-bottom: 100px;
-      
     }
   }
   .footer__col--pages {
