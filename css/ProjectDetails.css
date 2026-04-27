@@ -107,7 +107,7 @@ button:hover {
 @media (max-width: 400px) {
   button {
     font-size: 8px;
-    padding: 15px 18px;
+    padding: 20px 20px;
   }
   button .arrow {
     font-size: 12px;
@@ -121,7 +121,7 @@ button:hover {
   color: #292f36;
 }
 .button--primary:hover {
-  background-color: rgb(198.253968254, 149.4523809524, 97.246031746);
+  background-color: rgb(29.9947368421, 34.3842105263, 39.5052631579);
 }
 
 * {
@@ -134,11 +134,11 @@ body {
 }
 
 .main__wrapper {
-  border: 1px solid red;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  position: relative;
 }
 @media (max-width: 900px) {
   .main__wrapper {
@@ -171,41 +171,42 @@ header div {
     width: 50%;
   }
 }
-header div nav {
+header nav {
   display: flex;
   align-items: center;
   margin-left: auto;
+  position: relative;
 }
-header div nav .nav__links {
+header nav .nav__links {
   display: flex;
   gap: 50px;
   position: relative;
 }
 @media (max-width: 900px) {
-  header div nav .nav__links {
+  header nav .nav__links {
     gap: 35px;
   }
 }
-header div nav a {
+header nav a {
   text-decoration: none;
   color: #292f36;
   font-size: 20px;
   font-family: "Jost", sans-serif;
 }
-header div nav a:hover {
+header nav a:hover {
   color: #cda274;
 }
-header div nav .nav__item {
+header nav .nav__item {
   position: relative;
 }
-header div nav .nav__item a {
+header nav .nav__item a {
   text-decoration: none;
   color: #292f36;
 }
-header div nav .nav__item:hover {
+header nav .nav__item:hover {
   color: #cda274;
 }
-header div nav .nav__item.dropdown .dropdown__menu {
+header nav .nav__item.dropdown .dropdown__menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -218,23 +219,27 @@ header div nav .nav__item.dropdown .dropdown__menu {
   min-width: 160px;
   z-index: 100;
 }
-header div nav .nav__item.dropdown .dropdown__menu li a {
+header nav .nav__item.dropdown .dropdown__menu li a {
   padding: 10px;
   display: block;
   color: #292f36;
   text-decoration: none;
 }
-header div nav .nav__item.dropdown .dropdown__menu li a:hover {
+header nav .nav__item.dropdown .dropdown__menu li a:hover {
   color: #cda274;
 }
-header div nav .nav__item.dropdown:hover .dropdown__menu {
+header nav .nav__item.dropdown:hover .dropdown__menu {
   display: block;
 }
-header div .searchIcon {
+header .searchIcon {
   margin-left: 30px;
 }
 
 .nav__check {
+  display: none;
+}
+
+.nav__toggle {
   display: none;
 }
 
@@ -247,26 +252,26 @@ header div .searchIcon {
 }
 
 @media (max-width: 756px) {
-  .nav__toggle {
+  header .nav__toggle {
     display: block;
     font-size: 32px;
     cursor: pointer;
     margin-left: auto;
   }
-  .nav__links {
+  header .nav__links {
     display: none !important;
     position: absolute;
     left: 0;
     z-index: 100;
   }
-  #navCheck:checked ~ .nav__links {
+  header #navCheck:checked ~ .nav__links {
     display: flex !important;
     flex-direction: column;
     position: absolute;
-    top: 80px;
-    left: 400px;
-    width: 30%;
-    margin: 0;
+    top: 20px;
+    left: auto;
+    right: 20px;
+    width: 100px;
     background: white;
     border: 1px solid #ddd;
   }
@@ -297,7 +302,6 @@ footer {
 footer .footer__container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   max-width: 1000px;
   margin-bottom: 134px;
   gap: 40px;
