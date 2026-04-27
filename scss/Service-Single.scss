@@ -88,8 +88,6 @@
     align-items: center;
     justify-content: center;
 
-    cursor: pointer;
-
     &:hover {
       background: colors.$primary-color2;
     }
@@ -97,7 +95,6 @@
   &__play img {
     width: 21px;
     height: 32px;
-    display: block;
   }
 
   @media (max-width: 700px) {
